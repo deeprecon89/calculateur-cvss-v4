@@ -1,12 +1,13 @@
-# CVSS v4.0 calculator
-The CVSS v4.0 Calculator is built based on the Common Vulnerability Scoring System (CVSS) version 4.0 [Specification Document](https://www.first.org/cvss/v4.0/specification-document). This document serves as the authoritative reference for understanding how to calculate the severity of vulnerabilities.
+# Calculateur CVSS v4.0
+Le calculateur CVSS v4.0 est basé sur le document de spécification de la version 4.0 du Common Vulnerability Scoring System (CVSS). Ce document constitue la référence officielle pour comprendre comment évaluer la gravité des vulnérabilités.
 
-This project is a web-based application that calculates the CVSS score for a given vulnerability. The core logic is implemented using JavaScript classes that encapsulate the CVSS metrics, scoring calculations, and vector string manipulations:
+Ce projet est une application web qui permet de calculer le score CVSS pour une vulnérabilité donnée. La logique principale est implémentée à l’aide de classes JavaScript qui encapsulent les métriques CVSS, les calculs de score et la manipulation de chaînes vectorielles :
 
-- The `Vector` class handles the CVSS vector string and the associated metrics. It is the backbone of the application's logic, providing methods to update and validate the vector string, compute equivalent classes, and derive metrics values.
-- The `CVSS40` class is responsible for calculating the CVSS v4.0 score. It interacts with an instance of the `Vector` class to derive the score and determine the severity level.
+    La classe Vector gère la chaîne vectorielle CVSS et les métriques associées. Elle constitue l’épine dorsale de la logique de l’application, en fournissant des méthodes pour mettre à jour et valider la chaîne vectorielle, calculer les classes équivalentes et dériver les valeurs des métriques.
 
-The application is live and can be accessed at [CVSS v4.0 Calculator](https://redhatproductsecurity.github.io/cvss-v4-calculator/).
+    La classe CVSS40 est chargée du calcul du score CVSS v4.0. Elle interagit avec une instance de la classe Vector pour calculer le score et déterminer le niveau de gravité.
+
+L’application est en ligne et accessible à l’adresse suivante : Calculateur CVSS v4.0.(https://deeprecon89.github.io/calcultateur-cvss-v4/).
 
 ## License
 This project is licensed under the BSD-2-Clause License. See the [LICENSE](./LICENSE) file for more information.
