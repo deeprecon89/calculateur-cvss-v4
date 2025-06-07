@@ -290,20 +290,20 @@ class Vector {
 
         // Define the macrovectors and their positions
         const macroVectorDetails = [
-            "Exploitability",
-            "Complexity",
-            "Vulnerable system",
-            "Subsequent system",
+            "Exploitabilité",
+            "Complexité",
+            "Système Vulnérable",
+            "Système Subséquent",
             "Exploitation",
-            "Security requirements"
+            "Prérequis de Sécurité"
         ];
 
         // Define which macrovectors have only two severity options
-        const macroVectorsWithTwoSeverities = ["Complexity", "Security requirements"];
+        const macroVectorsWithTwoSeverities = ["Complexité", "Prérequis de Sécurité"];
 
         // Lookup tables for macrovectors with two and three possible severity levels
-        const threeSeverities = ["High", "Medium", "Low"];
-        const twoSeverities = ["High", "Low"];
+        const threeSeverities = ["Haut", "Moyen", "Bas"];
+        const twoSeverities = ["Haut", "Bas"];
 
         // Construct the detailed breakdown
         return Object.fromEntries(
@@ -895,15 +895,15 @@ class CVSS40 {
      */
     calculateSeverityRating(score) {
         if (score === 0.0) {
-            return "None";
+            return "Aucun";
         } else if (score >= 0.1 && score <= 3.9) {
-            return "Low";
+            return "Bas";
         } else if (score >= 4.0 && score <= 6.9) {
-            return "Medium";
+            return "Moyen";
         } else if (score >= 7.0 && score <= 8.9) {
-            return "High";
+            return "Haut";
         } else if (score >= 9.0 && score <= 10.0) {
-            return "Critical";
+            return "Critique";
         }
         return "Unknown"; // In case of an unexpected score value
     }
