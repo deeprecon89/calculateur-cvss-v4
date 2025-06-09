@@ -7,7 +7,7 @@ La classe Vector gère la chaîne vectorielle CVSS et les métriques associées.
 
 La classe CVSS40 est chargée du calcul du score CVSS v4.0. Elle interagit avec une instance de la classe Vector pour calculer le score et déterminer le niveau de gravité.
 
-L’application est en ligne et accessible à l’adresse suivante : Calculateur CVSS v4.0.(https://deeprecon89.github.io/calcultateur-cvss-v4/).
+L’application est en ligne et accessible à l’adresse suivante : Calculateur CVSS v4.0. https://deeprecon89.github.io/calculateur-cvss-v4/
 
 ## License
 This project is licensed under the BSD-2-Clause License. See the [LICENSE](./LICENSE) file for more information.
